@@ -28,6 +28,24 @@ func getCreditCard(c *gin.Context) {
 	})
 }
 
+func createCreditCard(c *gin.Context) {
+	var reqBody CreditCard
+	if err := c.ShouldBindJSON(&reqBody); err != nil {
+		c.JSON(422, gin.H{
+			"message": "No encontrado",
+		})
+		return
+	}
+	CreditCards = append(CreditCards, reqBody)
+
+	c.JSON(200, gin.H{
+		"message": "Tarjeta creada con exito",
+	})
+
+}
+func updateCreditCard(c *gin.Context) {}
+func deleteCreditCard(c *gin.Context) {}
+
 func main() {
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    1,
