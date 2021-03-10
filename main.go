@@ -49,8 +49,31 @@ func createCreditCard(c *gin.Context) {
 }
 
 func updateCreditCard(c *gin.Context) {
+	id := c.Param("id")
+	var reqBody CreditCard
+	if err := c.ShouldBindJSON(&reqBody); err != nil {
+		c.JSON(422, gin.H{
+			"message": "No encontrado",
+		})
+		return
+	}
 
+	for i, u := range CreditCards {
+		if u.ID == id {
+			CreditCards[i].Name = reqBody.Name
+			CreditCards[i].Money = reqBody.Money
+
+			c.JSON(200, gin.H{
+				"message": "Se realizaron los cambios correctamente",
+			})
+			return
+		}
+	}
+	c.JSON(404, gin.H{
+		"message": "No se pudo encontrar a la targeta de credito señalada",
+	})
 }
+
 func deleteCreditCard(c *gin.Context) {}
 
 func main() {
