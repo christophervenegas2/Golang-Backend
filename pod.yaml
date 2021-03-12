@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: cvenegas
+  name: testbackend
+  labels: 
+    app: backend
+spec:
+  containers:
+  -  name: testbackend
+     image: christophervenegas2/testbackend
+     ports: 
+     -  containerPort: 8080
+        protocol: TCP

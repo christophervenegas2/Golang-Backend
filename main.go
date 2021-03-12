@@ -105,18 +105,53 @@ func deleteCreditCard(c *gin.Context) {
 
 func main() {
 	CreditCards = append(CreditCards, CreditCard{
-		ID:    "1",
+		ID:    "0",
 		Name:  "Paty maldonado",
 		Money: 20000,
 	})
 	CreditCards = append(CreditCards, CreditCard{
-		ID:    "2",
+		ID:    "1",
 		Name:  "Alexis Sanchez",
 		Money: 406000570,
 	})
 	CreditCards = append(CreditCards, CreditCard{
-		ID:    "3",
+		ID:    "2",
 		Name:  "Augusto Pinochet",
+		Money: 1234567890,
+	})
+	CreditCards = append(CreditCards, CreditCard{
+		ID:    "3",
+		Name:  "Paty maldonado",
+		Money: 20000,
+	})
+	CreditCards = append(CreditCards, CreditCard{
+		ID:    "4",
+		Name:  "Arturo Vidal",
+		Money: 4106000570,
+	})
+	CreditCards = append(CreditCards, CreditCard{
+		ID:    "5",
+		Name:  "Son Goku",
+		Money: 1234567890,
+	})
+	CreditCards = append(CreditCards, CreditCard{
+		ID:    "6",
+		Name:  "Bart Simpsons",
+		Money: 20000,
+	})
+	CreditCards = append(CreditCards, CreditCard{
+		ID:    "7",
+		Name:  "Ben 10",
+		Money: 406000570,
+	})
+	CreditCards = append(CreditCards, CreditCard{
+		ID:    "8",
+		Name:  "Luis Jara",
+		Money: 1234567890,
+	})
+	CreditCards = append(CreditCards, CreditCard{
+		ID:    "9",
+		Name:  "Donald Trump",
 		Money: 1234567890,
 	})
 
