@@ -106,8 +106,8 @@ func deleteCreditCard(c *gin.Context) {
 func main() {
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    "0",
-		Name:  "Paty maldonado",
-		Money: 20000,
+		Name:  "Cristiano Ronaldo",
+		Money: 20000000,
 	})
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    "1",
@@ -116,12 +116,12 @@ func main() {
 	})
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    "2",
-		Name:  "Augusto Pinochet",
+		Name:  "Lionel Messi",
 		Money: 1234567890,
 	})
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    "3",
-		Name:  "Paty maldonado",
+		Name:  "Kylian Mbappe",
 		Money: 20000,
 	})
 	CreditCards = append(CreditCards, CreditCard{
@@ -131,27 +131,27 @@ func main() {
 	})
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    "5",
-		Name:  "Son Goku",
+		Name:  "Luka modric",
 		Money: 1234567890,
 	})
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    "6",
-		Name:  "Bart Simpsons",
+		Name:  "Neymar da Silva ",
 		Money: 20000,
 	})
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    "7",
-		Name:  "Ben 10",
+		Name:  "Robert Lewandowski",
 		Money: 406000570,
 	})
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    "8",
-		Name:  "Luis Jara",
+		Name:  "Romelo Lukaku",
 		Money: 1234567890,
 	})
 	CreditCards = append(CreditCards, CreditCard{
 		ID:    "9",
-		Name:  "Donald Trump",
+		Name:  "Sergio Ramos",
 		Money: 1234567890,
 	})
 
